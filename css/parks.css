@@ -11,16 +11,23 @@ header{
 nav{
   background-color: lightblue;
   font-family: 'Gill Sans';
-  text-align: left; 
+  text-align: center;
+  display: inline-block;
+  width: 80%;
 }
 
+nav img {
+  width: 10%;
+}
+
+
 main{
-  background-color: yellow;
-  font-size: 130%;
+  background-color: white;
+  position: relative;
 }
 
 footer{
-  background-color: lightgrey;
+  background-color: green;
   color: red;
   text-align: center;
   padding: 10px;
@@ -44,4 +51,38 @@ p{
   line-height: 1.5;
   font-family: Verdana;
   margin: 20px 0;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 100;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  grid-template-columns: 20% 15%;
+}
+
+.column {
+  flex: 50%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+column img {
+  width: 100%;
+  height: auto;
 }
