@@ -11,8 +11,12 @@ header{
 nav{
   background-color: lightblue;
   font-family: 'Gill Sans';
-  text-align: left; 
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  width: 80%;
 }
+
 
 main{
   background-color: yellow;
@@ -44,4 +48,19 @@ p{
   line-height: 1.5;
   font-family: Verdana;
   margin: 20px 0;
+}
+
+.skip-to-content {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 100;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
 }
